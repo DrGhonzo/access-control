@@ -1,0 +1,108 @@
+{
+    "point": [
+        {
+            "alias": "Avance",
+            "config": {
+                "colorPen": "#00f22f",
+                "penEnable": true,
+                "host": "192.168.2.5",
+                "port": 502,
+                "read": {
+                    "addr": 0,
+                    "reg": 1,
+                    "zero": 0,
+                    "span": 400,
+                    "units": " Bar"
+                },
+                "write": {
+                    "addr": 0,
+                    "reg": 1,
+                    "controlOn": false
+                }
+            }
+        },
+        {
+            "alias": "retroceso",
+            "config": {
+                "colorPen": "#a0002f",
+                "penEnable": true,
+                "host": "192.168.2.5",
+                "port": 502,
+                "read": {
+                    "addr": 0,
+                    "reg": 1,
+                    "zero": 0,
+                    "span": 400,
+                    "units": " Bar"
+                },
+                "write": {
+                    "addr": 0,
+                    "reg": 1,
+                    "controlOn": false
+                }
+            }
+        },
+        {
+            "alias": "cilindro",
+            "config": {
+                "colorPen": "#00f22f",
+                "penEnable": true,
+                "host": "192.168.2.5",
+                "port": 502,
+                "read": {
+                    "addr": 0,
+                    "reg": 1,
+                    "zero": 0,
+                    "span": 100,
+                    "units": " \u00b0C"
+                },
+                "write": {
+                    "addr": 0,
+                    "reg": 1,
+                    "controlOn": {
+                        "sp": 180,
+                        "type": {
+                            "On/Off": false,
+                            "pid": {
+                                "kp": 5,
+                                "ki": 0.1,
+                                "kd": 2
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "alias": "bomba",
+            "config": {
+                "colorPen": "#00f22f",
+                "penEnable": true,
+                "host": "192.168.2.5",
+                "port": 502,
+                "read": {
+                    "addr": 0,
+                    "reg": 1,
+                    "zero": 0,
+                    "span": 200,
+                    "units": " \u00b0C"
+                },
+                "write": {
+                    "addr": 0,
+                    "reg": 1,
+                    "controlOn": {
+                        "sp": 180,
+                        "type": {
+                            "On/Off": false,
+                            "pid": {
+                                "kp": 5,
+                                "ki": 0.1,
+                                "kd": 2
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
