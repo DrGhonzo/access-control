@@ -1,6 +1,0 @@
-# The AppData module comes at the time with:
-+ full AccessControl class, which can handle:
-    + full user, password access request method or the AccessRequest class itself to customize as need.
-    Also AccessRequest class is inherit of AccessRequestGO QDialog inherited class.
-    + full user register request method or the UserRegister class itself to customize as need.
-    Also UserRegister class is inherit of UserRegisterGO QDialog inherited class.
